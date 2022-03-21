@@ -1,10 +1,12 @@
 import React from "react";
-import './homepage.styles.scss';
+import './home.styles.scss';
+import { Outlet } from 'react-router-dom';
 import Directory from "../../components/directory/directory.component";
 
 const HomePage = () => {
     return(
         <div className = "homepage">
+            <Outlet/>
             <Directory/>
         </div>
     );
